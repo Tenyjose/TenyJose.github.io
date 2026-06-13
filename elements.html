@@ -51,11 +51,24 @@
 					<div id="main">
 
 						<!-- Featured Post -->
-						
-						 
+
 							<article class="post featured">
 								<header class="major">
-									
+									<h2><a href="https://github.com/Tenyjose/mediassist">MediAssist &mdash; AI Hospital Assistant</a></h2>
+									<p>Inspired by a real freelance healthcare project, MediAssist is a fully LLM-native hospital appointment assistant powered by the <strong>Claude API</strong>. Unlike traditional chatbots built on intent classifiers, MediAssist uses Claude's native tool-use to understand patient requests and orchestrate actions in real time — no hard-coded intents, no decision trees.</p>
+									<p>The system is built as four independent <strong>FastAPI microservices</strong> containerised with <strong>Docker</strong> and deployed on <strong>Render</strong>: a mock appointments API with JWT-based OTP authentication, a <strong>ChromaDB</strong> retrieval service that performs vector search over a hospital FAQ knowledge base (RAG), a conversation API that manages multi-turn sessions and drives Claude's agentic tool loop, and a <strong>React</strong> frontend with a real-time chat UI.</p>
+									<p>Key features include LLM-native conversation management with persistent session state, secure OTP email authentication before exposing any patient data, RAG-based FAQ responses using ChromaDB vector search with ONNX embeddings, appointment viewing and cancellation via authenticated tool calls, and multilingual support — Claude responds in whatever language the patient writes in.</p>
+								</header>
+								<a href="https://mediassist-ui.onrender.com" class="image main"><img src="images/mediassist.svg" alt="MediAssist AI Hospital Assistant" /></a>
+								<ul class="actions special">
+									<li><a href="https://mediassist-ui.onrender.com" class="button large">Live Demo</a></li>
+									<li><a href="https://github.com/Tenyjose/mediassist" class="button large">GitHub</a></li>
+								</ul>
+							</article>
+
+							<article class="post featured">
+								<header class="major">
+
 									<h2><a href="https://github.com/Tenyjose/Portfolio__Projects/blob/master/Movie%20Portfolio%20Project.ipynb">Movie Data Analysis Using Pandas</a></h2>
 									<p>In this project i analysed movie data across the globe to identify patterns and relations using a Python library called Pandas<br>
 									</p>
@@ -68,10 +81,10 @@
 
 							<article class="post featured">
 								<header class="major">
-									
+
 									<h2><a href="https://github.com/Tenyjose/Portfolio__Projects/blob/master/RandomForest_Python.ipynb">Traffic Volume Prediction Using Random Forest</a></h2>
 									<p>Predict traffic volume on the Metro Interstate using weather and temporal data.<br>
-										Includes variables such as temperature, rainfall, snowfall, cloud coverage, and traffic volume. 
+										Includes variables such as temperature, rainfall, snowfall, cloud coverage, and traffic volume.
 										Implemented a Random Forest Regressor with an R² score of 0.94 after data preprocessing and feature engineering.</p>
 								</header>
 								<a href="https://github.com/Tenyjose/Portfolio__Projects/blob/master/RandomForest_Python.ipynb" class="image main"><img src="images/metro interstate.jpg" alt="" /></a>
@@ -82,11 +95,11 @@
 
 							<article class="post featured">
 								<header class="major">
-									
+
 									<h2><a href="https://github.com/Tenyjose/Portfolio__Projects/blob/master/RandomForest_Python.ipynb">Apple Stock Price Prediction Using Random Forest Regression</a></h2>
 									<p>This project uses historical Apple Inc. (AAPL) stock data from 1980 to 2024<br>
-									 to predict closing prices using a Random Forest Regressor, achieving an R² score of 0.999. 
-									 Key features like moving averages and price changes were engineered, and visualizations such as time series plots 
+									 to predict closing prices using a Random Forest Regressor, achieving an R² score of 0.999.
+									 Key features like moving averages and price changes were engineered, and visualizations such as time series plots
 									 and feature importance analysis demonstrated the model's accuracy and performance.</p>
 								</header>
 								<a href="https://github.com/Tenyjose/Portfolio__Projects/blob/master/RandomForest_Python.ipynb" class="image main"><img src="images/appl stock img.jpg" alt="" /></a>
@@ -97,7 +110,7 @@
 
 							<article class="post featured">
 								<header class="major">
-									
+
 									<h2><a href="https://github.com/Tenyjose/Pandas-Projects/blob/master/Pandas%20Learning%20Project.ipynb">Survey Project Using Pandas</a></h2>
 									<p>In this project i learned Python library called Pandas.Used various concepts like Grouping and new tools in Pandas.<br>
 									</p>
@@ -105,18 +118,6 @@
 								<a href="https://github.com/Tenyjose/Pandas-Projects/blob/master/Pandas%20Learning%20Project.ipynb" class="image main"><img src="images/survey.png" alt="" /></a>
 								<ul class="actions special">
 									<li><a href="https://github.com/Tenyjose/Pandas-Projects/blob/master/Pandas%20Learning%20Project.ipynb" class="button large">View Project</a></li>
-								</ul>
-							</article>
-
-							<article class="post featured">
-								<header class="major">
-									<h2><a href="https://github.com/Tenyjose/mediassist">MediAssist &mdash; AI Hospital Assistant</a></h2>
-									<p>LLM-native hospital appointment assistant built with Claude API, ChromaDB RAG, FastAPI microservices, and React. Features OTP authentication, appointment management, multilingual support, and RAG-based FAQ responses. Deployed on Render with Docker.</p>
-								</header>
-								<a href="https://mediassist-ui.onrender.com" class="image main"><img src="images/mediassist.svg" alt="MediAssist AI Hospital Assistant" /></a>
-								<ul class="actions special">
-									<li><a href="https://mediassist-ui.onrender.com" class="button large">Live Demo</a></li>
-									<li><a href="https://github.com/Tenyjose/mediassist" class="button large">GitHub</a></li>
 								</ul>
 							</article>
 
