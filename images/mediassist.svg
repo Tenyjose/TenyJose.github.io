@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d1f3c"/>
+      <stop offset="100%" style="stop-color:#0a3d4f"/>
+    </linearGradient>
+    <linearGradient id="crossGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff"/>
+      <stop offset="100%" style="stop-color:#a8d8ea"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="450" fill="url(#bg)"/>
+
+  <!-- Circuit grid lines -->
+  <g stroke="#1a4a6b" stroke-width="1" opacity="0.5">
+    <line x1="0" y1="90" x2="800" y2="90"/>
+    <line x1="0" y1="180" x2="800" y2="180"/>
+    <line x1="0" y1="270" x2="800" y2="270"/>
+    <line x1="0" y1="360" x2="800" y2="360"/>
+    <line x1="100" y1="0" x2="100" y2="450"/>
+    <line x1="200" y1="0" x2="200" y2="450"/>
+    <line x1="300" y1="0" x2="300" y2="450"/>
+    <line x1="500" y1="0" x2="500" y2="450"/>
+    <line x1="600" y1="0" x2="600" y2="450"/>
+    <line x1="700" y1="0" x2="700" y2="450"/>
+  </g>
+
+  <!-- Circuit traces (teal) -->
+  <g stroke="#00c8c8" stroke-width="1.5" fill="none" opacity="0.4">
+    <polyline points="100,90 200,90 200,180 300,180"/>
+    <polyline points="500,270 600,270 600,360 700,360"/>
+    <polyline points="100,360 200,360 200,270 300,270"/>
+    <polyline points="500,90 600,90 600,180 700,180"/>
+    <polyline points="300,90 300,180 500,180 500,90"/>
+    <polyline points="300,270 300,360 500,360 500,270"/>
+  </g>
+
+  <!-- Circuit dots -->
+  <g fill="#00c8c8" opacity="0.6">
+    <circle cx="200" cy="90" r="3"/><circle cx="300" cy="180" r="3"/>
+    <circle cx="600" cy="270" r="3"/><circle cx="700" cy="360" r="3"/>
+    <circle cx="200" cy="360" r="3"/><circle cx="300" cy="270" r="3"/>
+    <circle cx="600" cy="90" r="3"/><circle cx="700" cy="180" r="3"/>
+    <circle cx="300" cy="90" r="3"/><circle cx="500" cy="180" r="3"/>
+    <circle cx="300" cy="360" r="3"/><circle cx="500" cy="270" r="3"/>
+  </g>
+
+  <!-- Outer ring -->
+  <circle cx="400" cy="215" r="120" fill="none" stroke="#00c8c8" stroke-width="1.5" opacity="0.3" filter="url(#glow)"/>
+  <circle cx="400" cy="215" r="100" fill="none" stroke="#00c8c8" stroke-width="0.8" opacity="0.2"/>
+
+  <!-- Medical cross -->
+  <g filter="url(#glow)">
+    <rect x="368" y="155" width="64" height="120" rx="8" fill="url(#crossGrad)" opacity="0.95"/>
+    <rect x="340" y="183" width="120" height="64" rx="8" fill="url(#crossGrad)" opacity="0.95"/>
+  </g>
+
+  <!-- Chat bubble (AI indicator) -->
+  <g opacity="0.85" filter="url(#glow)">
+    <rect x="470" y="148" width="80" height="52" rx="10" fill="#00c8c8"/>
+    <polygon points="475,198 490,198 480,214" fill="#00c8c8"/>
+    <circle cx="490" cy="174" r="5" fill="#0d1f3c"/>
+    <circle cx="510" cy="174" r="5" fill="#0d1f3c"/>
+    <circle cx="530" cy="174" r="5" fill="#0d1f3c"/>
+  </g>
+
+  <!-- Label -->
+  <text x="400" y="368" font-family="Arial, sans-serif" font-size="26" font-weight="bold"
+        fill="#ffffff" text-anchor="middle" letter-spacing="3" opacity="0.95">MediAssist</text>
+  <text x="400" y="394" font-family="Arial, sans-serif" font-size="13"
+        fill="#00c8c8" text-anchor="middle" letter-spacing="2" opacity="0.8">AI HOSPITAL ASSISTANT</text>
+</svg>
