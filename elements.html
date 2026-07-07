@@ -54,6 +54,20 @@
 
 							<article class="post featured">
 								<header class="major">
+									<h2><a href="https://senus-board-report-lyart.vercel.app">Senus Board Report &mdash; AI-Native Financial Analytics Platform</a></h2>
+									<p>Built as a technical assessment for Assiduous Technology, this is a full-stack board reporting platform for <strong>Senus PLC</strong>, an Irish Natural Capital management company listed on Euronext Access Dublin. Rather than a static report, the app extracts real financial data directly from scanned PDF filings, calculates the metrics a board actually cares about, and layers AI-generated commentary on top.</p>
+									<p>The backend is a <strong>FastAPI</strong> service backed by <strong>PostgreSQL</strong> (via SQLAlchemy and Alembic migrations), storing structured financial data across seven tables. Since the source documents are scanned images rather than text-based PDFs, extraction runs entirely through <strong>Claude's vision API</strong> instead of traditional PDF parsing &mdash; one consistent extraction path, using four purpose-built prompts covering the income statement, balance sheet, cash flow, and growth metrics.</p>
+									<p>The metrics engine covers all five board-report categories &mdash; growth, profitability, cash &amp; liquidity, solvency, and returns &mdash; using real figures rather than approximations: EBITDA is built from actual depreciation data, and Debt Service Coverage Ratio uses the company's real loan repayment schedule. A <strong>React</strong> and <strong>Recharts</strong> frontend presents it all through a styled dashboard with an AI-generated executive summary panel.</p>
+								</header>
+								<a href="https://senus-board-report-lyart.vercel.app" class="image main"><img src="images/senus-board-report.png" alt="Senus Board Report Dashboard" /></a>
+								<ul class="actions special">
+									<li><a href="https://senus-board-report-lyart.vercel.app" class="button large">Live Demo</a></li>
+									<li><a href="https://github.com/Tenyjose/senus-board-report" class="button large">GitHub</a></li>
+								</ul>
+							</article>
+
+							<article class="post featured">
+								<header class="major">
 									<h2><a href="https://github.com/Tenyjose/mediassist">MediAssist &mdash; AI Hospital Assistant</a></h2>
 									<p>Inspired by a real freelance healthcare project, MediAssist is a fully LLM-native hospital appointment assistant powered by the <strong>Claude API</strong>. Unlike traditional chatbots built on intent classifiers, MediAssist uses Claude's native tool-use to understand patient requests and orchestrate actions in real time — no hard-coded intents, no decision trees.</p>
 									<p>The system is built as four independent <strong>FastAPI microservices</strong> containerised with <strong>Docker</strong> and deployed on <strong>Render</strong>: a mock appointments API with JWT-based OTP authentication, a <strong>ChromaDB</strong> retrieval service that performs vector search over a hospital FAQ knowledge base (RAG), a conversation API that manages multi-turn sessions and drives Claude's agentic tool loop, and a <strong>React</strong> frontend with a real-time chat UI.</p>
